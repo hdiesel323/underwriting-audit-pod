@@ -1,0 +1,22 @@
+{
+  "name": "underwriting-audit-pod",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Autonomous AUDITOR Worker Pod for Domain: insurance",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "serve": "tsx src/main.ts serve",
+    "test": "tsx --test tests/**/*.test.ts",
+    "check": "tsc --noEmit",
+    "scaffold": "node bin/scaffold.js"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
